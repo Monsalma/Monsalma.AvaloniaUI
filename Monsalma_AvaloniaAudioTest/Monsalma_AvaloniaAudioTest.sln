@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monsalma_AvaloniaAudioTest", "Monsalma_AvaloniaAudioTest\Monsalma_AvaloniaAudioTest.csproj", "{845962C8-296D-41FA-8F98-F67BBDEDD6E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monsalma_AvaloniaAudioTest.Android", "Monsalma_AvaloniaAudioTest.Android\Monsalma_AvaloniaAudioTest.Android.csproj", "{EC6F8AD6-9935-4186-B011-F03DAB23936A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monsalma_AvaloniaAudioTest.Desktop", "Monsalma_AvaloniaAudioTest.Desktop\Monsalma_AvaloniaAudioTest.Desktop.csproj", "{C0F171C6-316C-4935-BDCF-CA8EDB7B56F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{845962C8-296D-41FA-8F98-F67BBDEDD6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845962C8-296D-41FA-8F98-F67BBDEDD6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845962C8-296D-41FA-8F98-F67BBDEDD6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845962C8-296D-41FA-8F98-F67BBDEDD6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6F8AD6-9935-4186-B011-F03DAB23936A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6F8AD6-9935-4186-B011-F03DAB23936A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6F8AD6-9935-4186-B011-F03DAB23936A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC6F8AD6-9935-4186-B011-F03DAB23936A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6F8AD6-9935-4186-B011-F03DAB23936A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6F8AD6-9935-4186-B011-F03DAB23936A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C0F171C6-316C-4935-BDCF-CA8EDB7B56F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F171C6-316C-4935-BDCF-CA8EDB7B56F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F171C6-316C-4935-BDCF-CA8EDB7B56F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F171C6-316C-4935-BDCF-CA8EDB7B56F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6919B45-9E90-494C-8A66-4959C7BB6DB9}
+	EndGlobalSection
+EndGlobal
