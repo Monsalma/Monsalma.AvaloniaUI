@@ -1,0 +1,38 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Monsalma_AvaloniaNativeVideoPlayer.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Monsalma_AvaloniaNativeVideoPlayer.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:MainViewModel />
+	</Design.DataContext>
+
+	<StackPanel
+		Orientation="Vertical"
+		HorizontalAlignment="Center">
+
+		<TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+		<TextBox
+			x:Name="MediaURI"
+			HorizontalAlignment="Center"
+			Text="https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/refs/heads/master/sample.mp4" />
+
+		<Button
+			HorizontalAlignment="Center"
+			Content="Play"
+			Click="Button_Click" />
+
+		<StackPanel
+			x:Name="VideoContainer">
+
+		</StackPanel>
+
+	</StackPanel>
+
+</UserControl>
