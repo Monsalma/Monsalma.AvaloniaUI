@@ -1,12 +1,9 @@
 ﻿using Avalonia.Controls;
-using Monsalma_AvaloniaNativeVideoPlayer.Services;
 
 namespace Monsalma_AvaloniaNativeVideoPlayer.Views;
 
 public partial class MainView : UserControl
 {
-    private INativeMediaPlayerService MediaPlayerService { get; set; }
-
     public MainView()
     {
         InitializeComponent();
@@ -15,8 +12,7 @@ public partial class MainView : UserControl
 
     private void InitMediaPlayer()
     {
-        MediaPlayerService = new NativeMediaPlayerService(App.AppNativeVideoPlayerService);
-        Control mediaPlayerControl = MediaPlayerService.CreateControl();
+        Control mediaPlayerControl = App.AppNativeVideoPlayerService.CreateControl();
 
         mediaPlayerControl.Width = 400;
         mediaPlayerControl.Height = 300;
@@ -27,6 +23,6 @@ public partial class MainView : UserControl
 
     private void Button_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        MediaPlayerService.Play(MediaURI.Text);
+        App.AppNativeVideoPlayerService.Play(MediaURI.Text);
     }
 }
