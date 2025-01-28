@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 
+             xmlns:vm="clr-namespace:Monsalma_AvaloniaUserControlBinding.ViewModels"
+			 xmlns:ctrl="clr-namespace:Monsalma_AvaloniaUserControlBinding.Controls"
+             
+             x:Class="Monsalma_AvaloniaUserControlBinding.Views.MainView"
+             x:DataType="vm:MainViewModel">
+
+	<StackPanel
+		HorizontalAlignment="Center"
+		VerticalAlignment="Center">
+
+		<TextBox
+			x:Name="GreetingBox"
+			Text="" />
+		
+		<ctrl:BindableUserControl
+			Greeting="{Binding #GreetingBox.Text}" />
+
+	</StackPanel>
+
+</UserControl>

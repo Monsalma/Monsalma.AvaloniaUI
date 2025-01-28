@@ -1,0 +1,81 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 
+			 xmlns:ctrl="clr-namespace:Monsalma_AvaloniaUserControlBinding.Controls"
+			 
+             x:Class="Monsalma_AvaloniaUserControlBinding.Controls.BindableUserControl"
+			 x:DataType="ctrl:BindableUserControl"
+			 Name="BindableUserControl1">
+
+	<StackPanel>
+
+		<Border
+			BorderBrush="Gray"
+			BorderThickness="1"
+			Padding="5"
+			Margin="10">
+
+			<StackPanel>
+				<TextBlock
+					FontStyle="Italic"
+					Text="Binding to a named control - WPF/UWP style" />
+
+				<TextBlock
+					Text="{Binding Greeting, ElementName=BindableUserControl1}" />
+			</StackPanel>
+		</Border>
+
+		<Border
+			BorderBrush="Gray"
+			BorderThickness="1"
+			Padding="5"
+			Margin="10">
+
+			<StackPanel>
+				<TextBlock
+					FontStyle="Italic"
+					Text="Binding to a named control - Avalonia UI style" />
+
+				<TextBlock
+					Text="{Binding #BindableUserControl1.Greeting}" />
+			</StackPanel>
+		</Border>
+
+		<Border
+			BorderBrush="Gray"
+			BorderThickness="1"
+			Padding="5"
+			Margin="10">
+
+			<StackPanel>
+				<TextBlock
+					FontStyle="Italic"
+					Text="Binding to an ancestor" />
+
+				<TextBlock
+					Text="{Binding $parent[ctrl:BindableUserControl].Greeting}" />
+			</StackPanel>
+		</Border>
+
+		<Border
+			BorderBrush="Gray"
+			BorderThickness="1"
+			Padding="5"
+			Margin="10">
+
+			<StackPanel>
+				<TextBlock
+					FontStyle="Italic"
+					Text="Setting data context in XAML" />
+
+				<TextBlock
+					DataContext="{Binding #BindableUserControl1}"
+					Text="{Binding Greeting}" />
+			</StackPanel>
+		</Border>
+
+	</StackPanel>
+
+</UserControl>
