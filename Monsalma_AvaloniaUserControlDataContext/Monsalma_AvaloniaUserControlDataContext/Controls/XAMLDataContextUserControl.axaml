@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Monsalma_AvaloniaUserControlDataContext.Controls.XAMLDataContextUserControl"
+			 x:Name="DataContextUserControl1">
+
+	<StackPanel
+		DataContext="{Binding #DataContextUserControl1}">
+
+		<Border
+			BorderBrush="Gray"
+			BorderThickness="1"
+			Padding="5"
+			Margin="10">
+
+			<StackPanel>
+				<TextBlock
+					FontStyle="Italic"
+					Text="Data context set in XAML" />
+
+				<TextBlock
+					Text="{Binding Greeting}" />
+			</StackPanel>
+		</Border>
+	</StackPanel>
+</UserControl>
